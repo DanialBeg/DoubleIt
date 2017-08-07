@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17A291m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="liZ-RM-F1p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avalon Bold.ttf">
+            <string>Avalon-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9ex-aQ-yku">
+            <objects>
+                <navigationController id="wJv-SM-UFK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VFx-5a-NeS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiY-j6-79D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2260" y="144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZU2-ZM-UNQ">
+            <objects>
+                <viewController id="liZ-RM-F1p" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rqS-oC-bg1"/>
+                        <viewControllerLayoutGuide type="bottom" id="JCq-0T-EY5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zk7-oa-kar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2B3-IF-cHh">
+                                <rect key="frame" x="37" y="238.5" width="300" height="189"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dbld" translatesAutoresizingMaskIntoConstraints="NO" id="khM-3m-9t1">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42T-Re-b4a">
+                                        <rect key="frame" x="125.5" y="60" width="49" height="43"/>
+                                        <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="24"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="I5o-sQ-Q3A" kind="custom" customClass="customSeg" customModule="DoubleIt" customModuleProvider="target" id="gji-yS-OgT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXh-wU-ROM">
+                                        <rect key="frame" x="120.5" y="103" width="59" height="43"/>
+                                        <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="24"/>
+                                        <state key="normal" title="Shop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol6-hh-Yaf">
+                                        <rect key="frame" x="104.5" y="146" width="91" height="43"/>
+                                        <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="24"/>
+                                        <state key="normal" title="Rate us!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41546549119999998" green="0.8266241634" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2B3-IF-cHh" firstAttribute="centerX" secondItem="zk7-oa-kar" secondAttribute="centerX" id="ANX-lU-RrV"/>
+                            <constraint firstItem="2B3-IF-cHh" firstAttribute="centerY" secondItem="zk7-oa-kar" secondAttribute="centerY" id="JlU-3O-GTM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQS-1A-13w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1428" y="144"/>
+        </scene>
+        <!--Start-->
+        <scene sceneID="Qjw-dw-TIt">
+            <objects>
+                <viewController storyboardIdentifier="Start" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I5o-sQ-Q3A" customClass="Start" customModule="DoubleIt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Egz-v2-74R"/>
+                        <viewControllerLayoutGuide type="bottom" id="rdF-xN-4H6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MhQ-Fr-beQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zub-NT-aqc">
+                                <rect key="frame" x="167" y="287" width="40" height="92"/>
+                                <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="64"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4154654911826785" green="0.82662416339783773" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zub-NT-aqc" firstAttribute="centerX" secondItem="MhQ-Fr-beQ" secondAttribute="centerX" id="bam-lf-RXd"/>
+                            <constraint firstItem="Zub-NT-aqc" firstAttribute="centerY" secondItem="MhQ-Fr-beQ" secondAttribute="centerY" id="zMU-xh-wr6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="Zub-NT-aqc" id="85x-BP-5Pw"/>
+                        <segue destination="BYZ-38-t0r" kind="custom" identifier="homeRun" customClass="customSeg" customModule="DoubleIt" customModuleProvider="target" id="9Gn-dm-XmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0L-BV-gzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-615.20000000000005" y="145.27736131934034"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DoubleIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NOo-wR-7Zr">
+                                <rect key="frame" x="16" y="251.5" width="343" height="164"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAA-RV-czS">
+                                        <rect key="frame" x="156.5" y="0.0" width="30.5" height="69"/>
+                                        <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="54"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Double Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixN-X2-idi">
+                                        <rect key="frame" x="0.0" y="69" width="343" height="30"/>
+                                        <color key="textColor" red="1" green="0.86875027250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-eK-xTj">
+                                        <rect key="frame" x="0.0" y="99" width="343" height="43"/>
+                                        <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="24"/>
+                                        <state key="normal" title="Double It!">
+                                            <color key="titleColor" red="0.28922266237814731" green="0.51354298857868019" blue="0.2622400302070732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ButtonDouble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcX-0S-9zm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl8-cX-IIH">
+                                        <rect key="frame" x="115" y="142" width="113" height="22"/>
+                                        <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="17"/>
+                                        <color key="textColor" red="0.9765617043886281" green="0.93786808091816054" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ixN-X2-idi" firstAttribute="leading" secondItem="NOo-wR-7Zr" secondAttribute="leadingMargin" id="3Xw-Dd-Imf"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Z7t-eK-xTj" secondAttribute="trailing" id="Qdg-Pz-3Rj"/>
+                                    <constraint firstItem="Yl8-cX-IIH" firstAttribute="centerX" secondItem="NOo-wR-7Zr" secondAttribute="centerX" id="WQ0-Vf-7Mn"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ixN-X2-idi" secondAttribute="trailing" id="cRh-dt-23l"/>
+                                    <constraint firstItem="Z7t-eK-xTj" firstAttribute="leading" secondItem="NOo-wR-7Zr" secondAttribute="leadingMargin" id="r6N-p3-xu1"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mii-3p-a1P">
+                                <rect key="frame" x="124" y="646" width="127" height="22"/>
+                                <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41546549119999998" green="0.8266241634" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NOo-wR-7Zr" secondAttribute="trailing" id="0l9-w2-lFj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mii-3p-a1P" secondAttribute="bottom" constant="-1" id="7Mi-tx-cFS"/>
+                            <constraint firstItem="NOo-wR-7Zr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mje-fa-fDr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Z7t-eK-xTj" secondAttribute="leading" id="TpF-Sg-6sG"/>
+                            <constraint firstItem="NOo-wR-7Zr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xgu-n3-Tix"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z7t-eK-xTj" secondAttribute="trailing" id="YSb-2u-c9p"/>
+                            <constraint firstItem="NOo-wR-7Zr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dg9-vM-odh"/>
+                            <constraint firstItem="mii-3p-a1P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wN7-8h-DTP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="entry" destination="ixN-X2-idi" id="PuY-QG-FMS"/>
+                        <outlet property="highS" destination="Yl8-cX-IIH" id="d3c-rM-Rvi"/>
+                        <outlet property="initialNum" destination="bAA-RV-czS" id="0f7-ed-rwx"/>
+                        <outlet property="timeT" destination="mii-3p-a1P" id="AyM-jf-zTN"/>
+                        <segue destination="X1N-gj-3pz" kind="custom" identifier="Viddy" customClass="customSeg" customModule="DoubleIt" customModuleProvider="target" id="H1U-lV-hWx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="145"/>
+        </scene>
+        <!--Die-->
+        <scene sceneID="k6z-kD-mDR">
+            <objects>
+                <viewController id="X1N-gj-3pz" customClass="die" customModule="DoubleIt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FgF-hn-sau"/>
+                        <viewControllerLayoutGuide type="bottom" id="PQl-aQ-Zpa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MGz-VL-xbt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8W2-t4-tsq">
+                                <rect key="frame" x="107" y="301.5" width="182.5" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANw-nM-EgX">
+                                        <rect key="frame" x="10" y="0.0" width="162" height="64"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="54"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You earned points!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-9g-oBk">
+                                        <rect key="frame" x="0.0" y="64" width="182.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="Avalon-Bold" family="Avalon" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4V-V2-rKC">
+                                        <rect key="frame" x="60" y="90" width="62" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="RESTART">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doRestart:" destination="X1N-gj-3pz" eventType="touchUpInside" id="rvz-RG-t0t"/>
+                                            <segue destination="liZ-RM-F1p" kind="show" identifier="restart" id="mnH-VD-43Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93098706009999999" green="0.1691660042" blue="0.10505359860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8W2-t4-tsq" firstAttribute="centerY" secondItem="MGz-VL-xbt" secondAttribute="centerY" id="BuW-pi-Dwr"/>
+                            <constraint firstItem="8W2-t4-tsq" firstAttribute="centerX" secondItem="MGz-VL-xbt" secondAttribute="centerX" id="VoK-4Y-fSC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1C0-c5-iVV"/>
+                    <connections>
+                        <outlet property="laberinto" destination="ANw-nM-EgX" id="CCD-lA-94h"/>
+                        <outlet property="lol" destination="ANw-nM-EgX" id="F5R-Hi-4KB"/>
+                        <outlet property="pointsLabel" destination="Nud-9g-oBk" id="MxH-ai-Iiu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfv-bM-6Mj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dbld" width="300" height="60"/>
+    </resources>
+</document>

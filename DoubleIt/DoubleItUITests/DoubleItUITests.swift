@@ -2,7 +2,7 @@
 //  DoubleItUITests.swift
 //  DoubleItUITests
 //
-//  Created by Harris on 6/25/17.
+//  Created by Danial and Harris on 6/25/17.
 //  Copyright © 2017 ShadowLord. All rights reserved.
 //
 

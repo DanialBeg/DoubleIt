@@ -3,7 +3,7 @@
 //  Start.swift
 //  DoubleIt
 //
-//  Created by Harris on 6/26/17.
+//  Created by Danial and Harris on 6/26/17.
 //  Copyright © 2017 ShadowLord. All rights reserved.
 //
 
